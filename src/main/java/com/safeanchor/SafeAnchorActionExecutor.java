@@ -78,7 +78,8 @@ public final class SafeAnchorActionExecutor {
         if (client == null || client.player == null || pos == null) {
             return false;
         }
-        return client.player.getPos().squaredDistanceTo(Vec3d.ofCenter(pos)) <= 36.0D;
+        // Entity#getPos() was renamed to getEntityPos() in Yarn for 1.21.9+.
+        return client.player.getEntityPos().squaredDistanceTo(Vec3d.ofCenter(pos)) <= 36.0D;
     }
 
     /**

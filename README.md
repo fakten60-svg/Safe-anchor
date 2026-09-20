@@ -166,13 +166,32 @@ Voraussetzung: **Java 21**.
 
 ```bash
 git clone https://github.com/fakten60-svg/Safe-anchor.git
-cd safeanchor
+cd Safe-anchor
 ./gradlew build
 ```
 
 Die fertige Mod liegt danach unter `build/libs/safeanchor-1.0.0.jar`.
 
 Zum Testen im Dev-Client: `./gradlew runClient`.
+
+### CI & Releases
+
+- **Build-Workflow** (`.github/workflows/build.yml`): Baut die Mod bei jedem Push und
+  Pull Request; die JARs liegen anschließend als Workflow-Artefakt `safeanchor-jars`
+  unter *Actions*.
+- **Release-Workflow** (`.github/workflows/release.yml`): Wird durch einen Versions-Tag
+  ausgelöst, baut die Mod und veröffentlicht sie automatisch als
+  [GitHub-Release](https://github.com/fakten60-svg/Safe-anchor/releases) — inklusive
+  Mod-JAR, Sources-JAR und `SHA256SUMS.txt`.
+
+Neues Release erstellen:
+
+```bash
+# 1. version=X.Y.Z in gradle.properties setzen und committen
+# 2. Tag anlegen und pushen (muss zur Version passen, sonst bricht der Workflow ab)
+git tag vX.Y.Z
+git push origin vX.Y.Z
+```
 
 ## Lizenz
 
