@@ -8,8 +8,9 @@
 		"SafeAnchor"
 	],
 	"contact": {
-		"homepage": "https://github.com/Fakten60-svg/safeanchor",
-		"sources": "https://github.com/Fakten60-svg/safeanchor"
+		"homepage": "https://github.com/fakten60-svg/Safe-anchor",
+		"sources": "https://github.com/fakten60-svg/Safe-anchor",
+		"issues": "https://github.com/fakten60-svg/Safe-anchor/issues"
 	},
 	"license": "MIT",
 	"environment": "client",
