@@ -1,0 +1,23 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# Loom / Fabric run configs
+run/
+*.launch
+remappedJars/
+loom-cache/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local overrides (never commit)
+/local.properties

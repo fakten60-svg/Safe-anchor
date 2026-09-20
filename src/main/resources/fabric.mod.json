@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "safeanchor",
+	"version": "${version}",
+	"name": "SafeAnchor",
+	"description": "Client-side helper for a controlled one-shot safe Respawn Anchor PvP sequence.",
+	"authors": [
+		"SafeAnchor"
+	],
+	"contact": {
+		"homepage": "https://github.com/Fakten60-svg/safeanchor",
+		"sources": "https://github.com/Fakten60-svg/safeanchor"
+	},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.safeanchor.SafeAnchorClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
